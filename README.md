@@ -1,6 +1,9 @@
  
 # Web-crawler
 
+![Version](https://img.shields.io/github/v/release/charudatta10/web-crawler)
+![License](https://img.shields.io/github/license/charudatta10/web-crawler)
+
 <!-- Badges: Project Status GitHub -->
 ![license](https://flat.badgen.net/static/license/GPL-3.0/blue)
 ![release](https://flat.badgen.net/github/release/charudatta10/Web-crawler)
@@ -15,9 +18,9 @@
 <!-- Badges: Tools used -->
 `python` `just` `gig` `request` `beutifulsoup` 
 
-## Documentation 🗎
+## What is this? 🗎
 
-Crawlers can validate hyperlinks and HTML code. They can also be used for web scraping .  
+Crawlers can validate hyperlinks and HTML code. They can also be used for web scraping. This project provides Python crawlers that start from a seed URL, traverse links up to a configurable depth, and save scraped articles to CSV for offline research and analysis.
 
 ## Features 🌟
 
@@ -27,7 +30,34 @@ Crawlers can validate hyperlinks and HTML code. They can also be used for web sc
 
 ## Getting Started 🌱
 
-Run `just` cmd in command prompt.
+Clone and install dependencies:
+
+```bash
+git clone https://github.com/charudatta10/web-crawler.git
+cd web-crawler
+pip install requests beautifulsoup4
+```
+
+Run the crawler:
+
+```bash
+invoke run
+```
+
+## Usage examples
+
+Run the full crawl pipeline:
+
+```bash
+python src/web_crwaler.py
+python src/clean.py
+```
+
+Scraped articles are saved to `articles.csv` for downstream research.
+
+## License
+
+Distributed under the GNU General Public License v3.0 (GPL-3.0).
 
 ✨[Report a 🐛 or Request a ⭐](https://github.com/charudatta10/Web-crawler/issues)✨
 
